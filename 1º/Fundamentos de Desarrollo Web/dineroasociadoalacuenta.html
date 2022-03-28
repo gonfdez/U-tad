@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel= "stylesheet" type="text/css" href= "css/estilo.css"/>
+        <script type="text/javascript" src="js/utadblack.js"></script>
+        <style></style>
+    </head>
+    <body onload="cargaPagina()" >
+        <header>
+            <section id="logonofinal">
+                <img class="logoanim" id="utad" src="fotos/utad.png" alt="U-tad" style="opacity: 0;">
+                <img class="logoanim" id="u" src="fotos/solou.png" alt="U">
+            </section>
+            <img id="logofinal" src="fotos/u-tad-black-logo.png">
+			<ul class="menu">
+				<a href="index.html"><li>Volver</li></a>
+				<a href="catalogo.html"><li>Catalogo</li></a>
+				<li>
+					<a>Cuenta</a>
+					<ul class="submenu">
+                        <li><a href="crearCuenta.html">Crear Cuenta</a></li>
+                        <li><a href="dineroasociadoalacuenta.html">Cuenta</a></li>
+                        <li><a href="login.html"  onclick="borrarCookie('ubicacion')">Salir de la cuenta</a></li>
+					</ul>
+				</li>
+			</ul>
+        </header>
+        <main>
+            <div class="centrar" onfocus="subirFooter()" onblur="bajarFooter()">
+                <div id="submain">
+                    <div class="efagua">
+                        <div class="bls">
+                            <div id="reb">
+                            </div>
+                            <div id="bolap" class="bolac"></div>
+                            <div id="bolaf" class="bolac"></div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <b id="dinero">Dinero en la cuenta</b>
+                    <!-- <p id="dinInicial" class="invisible">
+                    </p> -->
+                </div>
+                <input id="cantidad" type="text" placeholder="Cantidad">
+                <button onclick="sumar()" class="wbtn"><i>Añadir</i></button>
+                <button onclick="restar()" class="wbtn"><i>Sustraer</i></button>
+            </div>
+        </main>
+        <footer>Copyright U-tad Back &copy; 2020</footer>
+    </body>
+</html>

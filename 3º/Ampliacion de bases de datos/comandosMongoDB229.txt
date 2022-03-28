@@ -1,0 +1,17 @@
+Gonzalo Fernandez Suarez
+
+mongo
+show dbs
+use test
+db.personas.insertOne( { "nombre" : "Gonzalo" } )
+db.personas.insertOne( { "nombre" : "Pablo" , "apellidos" : { "primero" : "Perez" , "segundo" : "Garcia" } , "edad" : 45 , "numeros" : [1,2,3,4]} )
+db.personas.findOne ( { "nombre" : "Gonzalo" } )
+db.personas.findOne ( { "nombre" : "Gonzalo" }, { "nombre" : 0 } )
+db.personas.findOne ( { "edad" { $gt : 40 } } )
+db.personas.findOne ( { "numeros" : {$in : [1,4] } } )
+db.personas.findOne ( { $or : [ { "edad" { $gt : 40 } }, { "numeros" : {$in : [1,4] } } )
+db.personas.findOne ( { "numeros" : { $elemMatch: { $gt : 2 , $lt: 5 } } } , { "numeros" : 1 } )
+db.personas.findOne( { "numeros" : { $gt: 3} } , { "numeros.$ : true }")
+db.personas.updateOne( { "nombre" : "Gonzalo" } , { $set: { "apellidos" : { "primero" : "Fernandez" , "segundo": "Suarez" } , "numeros" : [1,2,3,4,5,6] , "edad" : 25 } } ) 
+db.personas.update( { "nombre" : "Pablo" } , { %set: { "apellidos" : { "primero" : "Gonzalez" } } } )
+db.personas.createIndex ( { "nombre" : 1 } , { unique: false} )

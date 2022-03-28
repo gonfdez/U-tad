@@ -1,0 +1,324 @@
+/* Estilo footer */
+footer {
+    background: #000;
+    color: #aaaaaa;
+    text-align: center;
+    font-size:10px;
+    padding:5px;
+    position: fixed;
+    bottom: 0%;
+    width:100%;
+}
+
+/*Estilo header*/
+header {
+    background-color: white;
+	height:85px;
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: fixed;
+	border-width:0px 0px 3px 0px;
+	border-color: #D2D2D2;
+	border-style:solid;
+	font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    font-size: medium;
+    /**/
+    z-index: 100; 
+    padding: 30px;
+}
+header ul a {
+	display: inline-block;
+	color:black;
+	padding: 11px;
+	border-color:white;
+	border-style: solid;
+	border-width:4px;
+	border-radius:10pt;
+}
+header ul {
+	display: flex;
+    /* width: 675px; */
+    width: 40%;
+    padding: 0px;
+    padding-left: 50%;
+	justify-content:space-between;
+	list-style-type: none;
+}
+header ul a:hover {
+	border-width:4px;
+	border-color: #B2FFA6;
+	border-style:solid;
+	border-radius: 15pt;
+	padding:11px;
+    /**/
+    transition: 0.5s;
+	color: red;
+	transition : all .3s; /*con esto hacemos que al pasar el raton por encima la animacion del color no sea tan brusca, en este caso 0.3 segundos*/
+}
+.submenu {
+	position: absolute; /*para que se situe justo debajo del menu, por eso antes hemos puesto relative*/
+	width: 120%;
+	visibility: hidden; /*esto se pone para ocultar todo lo que haya, en este caso en submenu suele ir acompañado de un opacity 0*/
+	opacity: 0;
+	transition: opacity 1s; /* se pone opacity porque la transicion solo va  a funcionar cuando detecte en un submenu un opacity*/
+    /**/
+    padding-left: 0%;
+}
+.submenu li a{
+    color: #000;
+    background-color: rgba(49, 43, 43, 0.521);
+	display: block;
+	padding: 15px;
+}
+.menu li:hover .submenu{ /* se pone asi porque hace un hover cuando pasa por el menu y cuando detecta un submenu lo abre*/
+	display: block;
+	background-color: rgba(0, 0, 0, 0);
+	visibility: visible; /* hace visible los elementos del submenu que habiamos puesto hidden anteriormente, suele ir acompañado de un valor >0 de opacity(1 generalmente)*/
+	opacity: 1;
+}
+
+/*Otros*/
+a {
+    text-decoration: none;
+}
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(97, 97, 97);
+	margin: 0px 0px 0px 0px;
+	height:1400px;
+}
+main {
+    padding: 30px;
+    padding-top: 148px;
+    min-height: 635px;
+    position: relative;
+}
+
+/*login*/
+#mapa {
+    position: absolute;
+    height: 50%;
+    width: 97%;
+}
+
+/*cuenta*/
+#submain {
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+    justify-content: flex-end;
+    background: #fff;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+.bolac {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    transform: scale(1);
+    filter: blur(10px);
+    transition: top 3s cubic-bezier(.32,2,.59,2);
+    transition: left 3s cubic-bezier(.32,2,.59,2);
+    opacity: 0;
+    background: rgb(182, 167, 39);;
+}
+
+#bolap {
+    top: 50%;
+    left: 50%;
+}
+
+#bolaf {
+    top: 0%;
+    left: 0%;
+}
+
+#reb {
+    top: 30%;
+    /* left: 50%; */
+    transform: scale(1);
+    transition: transform 10s ease-in-out, background 2.5s ease-in-out;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    z-index: 100;
+    filter: blur(5px);
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: #2c2b1cb0;
+    /* background: #b6a727; */
+    animation: cambTam 1s easy-in 0s 1 normal running;
+}
+
+.efagua {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: contrast(20);
+    /* background: #fff; */
+    background: rgba(97, 97, 97, 0.62);
+}
+
+.centrar {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.bls {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 46%;
+    min-height: 350px;
+}
+
+/*Logo animado*/
+#logonofinal {
+    position: absolute;
+    top: 14%;
+    left: 4%;
+}
+.logoanim {
+    display: inline-flex;
+}
+#utad, #u {
+    left: 0;
+    position: absolute;
+    transition: opacity 1s cubic-bezier(1,.3,.66,.74);
+    filter: hue-rotate(0deg);
+    filter: grayscale(100%);
+    z-index: 1;
+    width: auto;
+    height: auto;
+}
+
+#logofinal {
+    opacity: 0;
+    position: absolute;
+    left: 4%;
+    transition: left 1.2s ease-in-out;
+}
+
+/*Catalogo*/
+
+    /*Estilo Cartel*/
+#cartel {
+	font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+	background-image: url("../fotos/fotoCartel.jpg");
+	background-position: center;
+	background-size:cover;
+	background-repeat:no-repeat;
+	width:100%;
+	height:650px;
+	color:white;
+	padding-top:90px;
+	border-width: 0px;
+	border-color:#4B4B4B;
+	border-radius:0pt 0pt 400pt 400pt ;
+}
+#u-tad-black-lista{
+	padding: 10px;
+	margin-left:1000px;
+	margin-top:150px;
+	font-size:large;
+	border-width:3px;
+	border-color: transparent;
+	border-style:solid;
+	border-radius: 15pt;
+    width:250px;
+    background-image: url(../fotos/fotoCartel.jpg);
+}
+#u-tad-black-lista:hover{
+	border-width:3px;
+	border-color:#B2FFA6;
+	transition: 0.5s;
+}
+
+#cartel>div>img {
+	height:50px;
+}
+
+
+
+    /*Estilo tarjetas*/
+
+#contenedorTarjetas {
+	width:100%;
+	margin:0px;
+	padding-top:0px;
+	display:flex;
+	justify-content:space-around;
+	flex-wrap:wrap;
+}
+.tarjetas {
+	display:inline-block;
+	height:140px;
+	width: 300px;
+	color: transparent;
+	margin-top:10px;
+	background-color:white;
+	border-radius:10pt;
+	border-width:0px 3px 3px 0px;
+	border-color: #171717;
+	border-style:solid;
+	font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+	font-size: small;
+	padding:30px;
+	text-align:justify;
+	vertical-align:middle;
+	transition: color 0.75s 0.25s, height 1s;
+}
+.tarjetas>h3{
+	text-align:center;
+}
+.tarjetas>img {
+	height:150px;
+	width:250px;
+	padding:0px 0px 0px 24px;
+}
+
+    /*Buscador*/
+#buscadorTargetas {
+	height:140px;
+	width: 300px;
+    color: transparent;
+    display: flex;
+	background-color:rgba(78, 34, 34, 0.808);
+	border-radius:20pt;
+	border-width: 2px 3px 2px 3px;
+	border-color: #1f1d1d;
+	border-style:solid;
+	padding:30px;
+    text-align:justify;
+    flex-direction: column;
+    margin-left: 40%;
+}
+
+#buscadorTargetas p {
+    font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+    color: antiquewhite;
+    align-self: center;
+}
+
+#buscadorTargetas input {
+    margin-top: 10%;
+    padding: 3%;
+}
+
+/*No esta soportado en Internet Explorer*/
+#buscadorTargetas input::placeholder {
+    text-align: center;
+}

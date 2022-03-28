@@ -1,0 +1,38 @@
+header {
+	background-color: white;
+	height:85px;
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	position: fixed;
+	border-width:0px 0px 3px 0px;
+	border-color: #D2D2D2;
+	border-style:solid;
+	font-family: Vegur, 'PT Sans', Verdana, sans-serif;
+	font-size: medium;
+}
+header>ul>a {
+	display: inline-block;
+	color:black;
+	padding: 11px;
+	border-color:white;
+	border-style: solid;
+	border-width:4px;
+	border-radius:10pt;
+}
+header>ul {
+	display: flex;
+	width: 675px;
+	padding: 0px;
+	justify-content:space-between;
+	
+}
+header>ul>a:hover {
+	border-width:4px;
+	border-color: #B2FFA6;
+	border-style:solid;
+	border-radius: 15pt;
+	padding:11px;
+	transition: 0.5s;
+}

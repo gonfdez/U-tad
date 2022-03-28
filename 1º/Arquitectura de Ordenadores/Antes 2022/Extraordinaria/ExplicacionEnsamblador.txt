@@ -1,0 +1,6 @@
+Primero se imprime la pregunta "¿Que sintomas tienes?"
+y despues se empieza a leer el teclado (en un bucle), en funcion de la opcion escogida el programa 
+ejecuta un bucle u otro que le las otras opciones posibles del teclado y, una vez elegidas,
+ muestra finalmente el resultado llamando a otros metodos que lo imprimen. 
+
+JJ espero que esta vez me dejes defender mi examen, y con gusto te explico todo bien.

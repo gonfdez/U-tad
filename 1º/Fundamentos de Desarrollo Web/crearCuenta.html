@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel= "stylesheet" type="text/css" href= "css/estilo.css"/>
+        <script type="text/javascript" src="js/utadblack.js"></script>
+        <script src="http://maps.google.com/maps/api/js"></script>
+        <script type="text/javascript">
+            alert("Estas entrando en una pagina restringida"); //confirm, prompt
+        </script>
+    </head>
+    <body onload="cargaPagina()" >
+        <header>
+            <section id="logonofinal">
+                <img class="logoanim" id="utad" src="fotos/utad.png" alt="U-tad" style="opacity: 0;">
+                <img class="logoanim" id="u" src="fotos/solou.png" alt="U">
+            </section>
+            <img id="logofinal" src="fotos/u-tad-black-logo.png">
+			<ul class="menu">
+				<a href="index.html"><li>Volver</li></a>
+				<a href="catalogo.html"><li>Catalogo</li></a>
+				<li>
+					<a>Cuenta</a>
+					<ul class="submenu">
+                        <li><a href="crearCuenta.html">Crear Cuenta</a></li>
+                        <li><a href="dineroasociadoalacuenta.html">Cuenta</a></li>
+                        <li><a href="login.html" onclick="borrarCookie('ubicacion')">Salir de la cuenta</a></li>
+					</ul>
+				</li>
+			</ul>
+        </header>
+        <main>
+            <h1>SIGN UP</h1>
+            <form method="get" action="catalogo.html">
+                <b>Nombre</b><br />
+                <input type="text" id="Davis" /><br />
+                <b>Apellidos</b><br />
+                <input type="text" id="Hacker" /><br />
+                <b>Administrador</b><br />
+                <input type="text" id="usuario" /><br />
+                <b>Contraseña:</b><br />
+                <input type="password" id="pwd" /><br />
+                <input type="submit" value="Submit" />
+            </form>
+            <div id="locationinfo"></div>
+                <br>La geolocalización no está habilitada en su navegador.
+            <div id="mapa"></div>
+        </main>
+        <footer>Copyright U-tad Back &copy; 2020</footer>
+    </body>
+</html>

@@ -1,0 +1,18 @@
+use university;
+describe instructor;
+select * from information_schema.table_constraints where table_name = 'instructor';
+describe department;
+select * from information_schema.table_constraints where table_name = 'department';
+select * from instructor where dept_name = 'Physics';
+select count(distinct id) from instructor;
+select * from instructor order by salary desc;
+select distinct grade, semester, year, course_id from takes where course_id = 'CS-101';
+select * from classroom where capacity = (select max(capacity) from classroom);
+select * from classroom where capacity = (select min(capacity) from classroom);
+select * from department order by budget desc;
+select dept_name, building, (budget*1.2) from department order by budget desc;
+select name, despt_name, tot_cred, course_id, semester, year, grade, from student inner join takes where student.name = 'Sanchez';
+select name, despt_name, tot_cred, course_id, semester, year, grade, from student inner join takes where student.dept_name = 'Comp. Sci.';
+select name, building, room_number, capacity from student inner join classroom where student.name = 'Sanchez';
+select student.name, instructor.name, instructor.dept_name, salary from student inner join instructor where student.name = 'Sanchez';
+select * from (select student.name, student.tot_cred, takes.semester, takes.year, takes.grade from student inner join takes where student.name = 'Levy') as t1 inner join (select title, dept_name, credits from course) as t2;

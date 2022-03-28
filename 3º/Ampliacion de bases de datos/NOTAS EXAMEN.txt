@@ -1,0 +1,3 @@
+Caen todos los temas. Un ejercicio de cada tema. Se puede utilizar los apuntes e internet. Todo menos herramientas de comunicación. 
+Cassandra va a ser mas escribir. Python en mapreviews. Mongo y neo4j se enviaran las consultas directamente. El examen dura 2 horas.
+¿Look Up?
