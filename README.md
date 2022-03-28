@@ -1,5 +1,5 @@
 #   Ing. del Software + Big Data en U-tad
-Repositorio de archivos académicos de Ingeniería del Software con mención en Data Science en la Universidad de Tecnología y Arte Digital.
+Repositorio de archivos académicos de Ingeniería del Software con mención en Data Science de la Universidad de Tecnología y Arte Digital.
 
 ### Para saber si está lo que buscas compruébalo aquí, será más rápido que explorar el repositorio:
 ```powerShell > tree /F
