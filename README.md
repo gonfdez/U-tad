@@ -144,66 +144,11 @@ Repositorio de archivos académicos de Ingeniería del Software con mención en 
 │   │   │       Practica S.Distribuidos - Empresa Venta on-line en AWS_ Enunciado.pdf
 │   │   │
 │   │   └───Practica 3
-│   │       │   calculadora.py
-│   │       │   calculadora.zip
-│   │       │   formulario_calculadora.html
-│   │       │   formulario_calculadora.zip
-│   │       │   Práctica 3_GFS.pdf
-│   │       │
-│   │       └───pymysql
-│   │           │   charset.py
-│   │           │   connections.py
-│   │           │   converters.py
-│   │           │   cursors.py
-│   │           │   err.py
-│   │           │   optionfile.py
-│   │           │   protocol.py
-│   │           │   times.py
-│   │           │   util.py
-│   │           │   _auth.py
-│   │           │   _compat.py
-│   │           │   _socketio.py
-│   │           │   __init__.py
-│   │           │
-│   │           ├───constants
-│   │           │       CLIENT.py
-│   │           │       COMMAND.py
-│   │           │       CR.py
-│   │           │       ER.py
-│   │           │       FIELD_TYPE.py
-│   │           │       FLAG.py
-│   │           │       SERVER_STATUS.py
-│   │           │       __init__.py
-│   │           │
-│   │           └───tests
-│   │               │   base.py
-│   │               │   test_basic.py
-│   │               │   test_connection.py
-│   │               │   test_converters.py
-│   │               │   test_cursor.py
-│   │               │   test_DictCursor.py
-│   │               │   test_err.py
-│   │               │   test_issues.py
-│   │               │   test_load_local.py
-│   │               │   test_nextset.py
-│   │               │   test_optionfile.py
-│   │               │   test_SSCursor.py
-│   │               │   __init__.py
-│   │               │
-│   │               ├───data
-│   │               │       load_local_data.txt
-│   │               │       load_local_warn_data.txt
-│   │               │
-│   │               └───thirdparty
-│   │                   │   __init__.py
-│   │                   │
-│   │                   └───test_MySQLdb
-│   │                           capabilities.py
-│   │                           dbapi20.py
-│   │                           test_MySQLdb_capabilities.py
-│   │                           test_MySQLdb_dbapi20.py
-│   │                           test_MySQLdb_nonstandard.py
-│   │                           __init__.py
+│   │           calculadora.py
+│   │           calculadora.zip
+│   │           formulario_calculadora.html
+│   │           formulario_calculadora.zip
+│   │           Práctica 3_GFS.pdf
 │   │
 │   └───Pensamiento Creativo
 │           Anteproyecto Gonzalo Fernandez.pdf
@@ -231,6 +176,7 @@ Repositorio de archivos académicos de Ingeniería del Software con mención en 
 │   │   │
 │   │   └───2022
 │   │           PRACTICA 1_GONZALO_FERNANDEZ_SUAREZ_Bases de Datos_2021-2022_v1.pdf
+│   │           scriptSQL.sql
 │   │
 │   ├───Diseño de Software
 │   │   │   Refactorización_GonzaloFernandezSuarez.pdf
